@@ -1,31 +1,325 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Slim's Film</title> <!--Título quee aparece no topo do navegador-->
-</head>
-<body>
-    <header>
-        <h1>Slim's Film</h1>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre nós</a>
-            <a href="#contato">Contato</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#termos">Termos de Serviço</a>
-            <a href="#politicaspriv">Políticas de privacidade</a>
-            <a href="#politicasprazos">Políticas de Prazos e Envios</a>
-            <a href="#carrinho">Carrinho</a>
-            <a href="#cadastro">Cadastro</a>
-            <a href="#login">login</a>
-            <!--menu de navegação-->
-        </nav>
-    </header>
 
-    <main></main>
-    <footer>
-         <p>&copy; 2026. Desenvolvido por (nome da equipe). Todos os direitos reservados </p>
-         <!--Rodapé do site-->
-    </footer>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres para aceitar acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+
+
+<!-- Faz a página se adaptar a diferentes tamanhos de tela -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Define o título que aparece na aba do navegador -->
+<title>Contato | Slim's Film Wrap</title>
+
+
+</head>
+
+<body>
+
+<header>
+    <h1>Slim's Film Wrap</h1>
+    <!--
+        NAV:
+        Área destinada aos links de navegação do site.
+        Como solicitado, deixamos somente o link de Contato.
+    -->
+    <nav>
+
+        <!-- Link para a página de contato -->
+        <a href="contato.html">Contato</a>
+
+    </nav>
+
+</header>
+
+
+<!--
+    MAIN:
+    Contém o conteúdo principal da página.
+    Tudo que é mais importante para o usuário fica dentro do <main>.
+-->
+<main>
+
+    <section>
+
+        <h2>Entre em Contato</h2>
+
+        <!-- Texto de apresentação -->
+        <p>
+            Entre em contato com a Slim's Film Wrap para tirar suas dúvidas,
+            conhecer nossos serviços ou solicitar um orçamento.
+        </p>
+
+    </section>
+
+    <!--
+        SEÇÃO DE CONTATO:
+        Apresenta telefone, WhatsApp, e-mail e endereços.
+    -->
+    <section>
+        <h2>Fale Conosco</h2>
+
+        <!--
+            TELEFONE:
+            O atributo "tel:" permite que dispositivos compatíveis
+            iniciem uma ligação ao clicar no número.
+        -->
+        <p>
+            <!-- <strong> deixa o texto em destaque -->
+            <strong>Telefone:</strong>
+
+            <a href="tel:+5511930229526">
+                (11) 93022-9526
+            </a>
+
+        </p>
+        <!--
+            WHATSAPP:
+            O link "wa.me" abre uma conversa no WhatsApp.
+            target="_blank" abre o link em uma nova aba.
+        -->
+        <p>
+
+            <strong>WhatsApp:</strong>
+
+            <a
+                href="https://wa.me/5511930229526"
+                target="_blank">
+
+                Falar pelo WhatsApp
+
+            </a>
+
+        </p>
+
+        <!--
+            E-MAIL:
+            O "mailto:" faz o navegador abrir o programa
+            de e-mail do usuário.
+        -->
+        <p>
+
+            <strong>E-mail:</strong>
+
+            <a href="mailto:slimsfilmenvelopamento@gmail.com">
+
+                slimsfilmenvelopamento@gmail.com
+
+            </a>
+
+        </p>
+
+
+        <!-- Primeiro endereço -->
+        <p>
+
+            <strong>Endereço:</strong>
+
+            Rua Itapura, 1183 - Tatuapé
+
+        </p>
+
+
+        <!-- Segundo endereço -->
+        <p>
+
+            <strong>Endereço:</strong>
+
+            Av. Paranaguá, 1181
+
+        </p>
+
+    </section>
+
+
+    <!--
+        FORMULÁRIO:
+        Área onde o cliente pode preencher seus dados
+        para solicitar um orçamento.
+    -->
+    <section>
+
+        <h2>Solicite um Orçamento</h2>
+        <!--
+            FORM:
+            Cria o formulário.
+
+            action="#":
+            Por enquanto, o formulário não está conectado
+            a um sistema para receber os dados.
+
+        -->
+        <form action="#" method="post">
+
+
+            <!-- Campo para o nome -->
+            <label for="nome">
+                Nome:
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                required>
+
+            <br><br>
+
+
+            <!-- Campo para o e-mail -->
+            <label for="email">
+                E-mail:
+            </label>
+
+            <br>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+
+            <br><br>
+
+
+            <!-- Campo para telefone -->
+            <label for="telefone">
+                Telefone:
+            </label>
+
+            <br>
+
+            <input
+                type="tel"
+                id="telefone"
+                name="telefone">
+
+            <br><br>
+
+
+            <!--
+                SELECT:
+                Cria uma lista para o cliente escolher
+                qual serviço deseja.
+            -->
+            <label for="servico">
+                Serviço de interesse:
+            </label>
+
+            <br>
+
+            <select id="servico" name="servico">
+                <option value="">
+                    Selecione um serviço
+                </option>
+
+                <option value="ppf">
+                    PPF
+                </option>
+
+                <option value="insulfilm">
+                    Insulfilm
+                </option>
+
+                <option value="envelopamento-premium">
+                    Envelopamento Premium
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <!--
+                TEXTAREA:
+                Área maior para o cliente escrever
+                uma mensagem ou explicar o que precisa.
+            -->
+            <label for="mensagem">
+                Mensagem:
+            </label>
+
+            <br>
+
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="6"
+                cols="40"></textarea>
+
+            <br><br>
+
+
+            <!--
+                BUTTON:
+                Botão responsável por enviar o formulário.
+            -->
+            <button type="submit">
+                Enviar Mensagem
+            </button>
+
+
+        </form>
+
+    </section>
+    <!--
+        HORÁRIO DE FUNCIONAMENTO:
+        Informa os dias e horários em que a empresa atende.
+    -->
+    <section>
+
+        <h2>Horário de Funcionamento</h2>
+
+
+        <p>
+
+            <strong>Segunda a sexta:</strong>
+
+            08:30 às 18:00
+
+        </p>
+
+        <p>
+
+            <strong>Sábado:</strong>
+
+            08:00 às 16:00
+
+        </p>
+
+        <p>
+
+            <strong>Domingo:</strong>
+
+            Fechado
+
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<!--
+    FOOTER:
+    Rodapé da página.
+
+    Normalmente é utilizado para informações como
+    direitos autorais, contatos e links adicionais.
+-->
+<footer>
+    <p>
+
+        &copy; 2026 Slim's Film Wrap.
+        Todos os direitos reservados.
+
+    </p>
+
+</footer>
+
 </body>
 </html>
