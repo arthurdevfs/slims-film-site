@@ -39,7 +39,7 @@ O processo de levantamento de requisitos com o responsável da **Slim's Film** f
 ### 3.2 Comprovação do Contacto com o Entrevistado
 A comprovação da reunião e do alinhamento com o representante da organização está registada no repositório através do ficheiro de imagem:
 
-![Registo de Reunião com a Organização](imagens/slims-film-imagem.jpeg)  
+![Registo de Reunião com a Organização](imagens/foto-do-grupo-na-slims-film.jpeg)  
 *Figura 1: Registo fotográfico da reunião de levantamento de requisitos junto da Slim's Film.*
 
 ---
