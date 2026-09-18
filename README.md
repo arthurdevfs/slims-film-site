@@ -1,6 +1,6 @@
 # Slim's Film - Website Institucional e Comercial
 
-> 🌐 **Ligação da Aplicação Hospedada:** [acesse o site no Netlify](https://slims-film.netlify.app)  
+> 🌐 **Ligação da Aplicação Hospedada:** [acesse o site](https://arthurdevfs.github.io/slims-film-site/))  
 
 ---
 
