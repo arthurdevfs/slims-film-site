@@ -1,7 +1,6 @@
-# 🎬 Slim's Film - Website Institucional e Comercial
+# Slim's Film - Website Institucional e Comercial
 
-> 🌐 **Ligação da Aplicação Hospedada:** [Aceda ao site no Netlify](https://slims-film.netlify.app)  
-*(Substitua o endereço acima pelo URL definitivo gerado após a publicação no Netlify)*
+> 🌐 **Ligação da Aplicação Hospedada:** [acesse o site no Netlify](https://slims-film.netlify.app)  
 
 ---
 
@@ -18,7 +17,7 @@
 ## 📌 2. Introdução
 
 ### 2.1 Apresentação da Organização
-A **Slim's Film** é uma empresa atuante no segmento de películas de controlo solar, proteção automóvel, arquitetura e soluções para vidros residenciais e comerciais. O foco principal da organização é a prestação de serviços especializados em películas térmicas, de privacidade e de segurança, proporcionando redução de temperatura, proteção contra raios UV e valorização estética dos ambientes e veículos atendidos.
+A **Slim's Film** é uma empresa atuante no segmento de películas de controle solar, proteção automóvel, arquitetura e soluções para vidros residenciais e comerciais. O foco principal da organização é a prestação de serviços especializados em películas térmicas, de privacidade e de segurança, proporcionando redução de temperatura, proteção contra raios UV e valorização estética dos ambientes e veículos atendidos.
 
 ### 2.2 Objetivo do Site
 O website foi desenvolvido para consolidar a presença digital oficial da marca, atendendo às seguintes finalidades:
@@ -103,3 +102,7 @@ slims-film-site/
     ├── produto.html             # Catálogo de películas
     ├── sobre1.html              # Informações institucionais
     └── termosdeuso.html         # Termos gerais de utilização
+
+## Contato direto com o responsavel
+
+Telefone: +55 (11) 94719-5992 - Rafael
