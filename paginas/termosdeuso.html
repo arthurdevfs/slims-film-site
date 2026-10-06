@@ -3,63 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Termos de Serviço | Slim's Film</title>
+
+    <!-- 1. Estilos Base Globais -->
+    <link rel="stylesheet" href="../css/base.css">
+
+    <!-- 2. Componentes Compartilhados -->
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/hero.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+
+    <!-- 3. Estilos Específicos para Documentos Legais -->
+    <link rel="stylesheet" href="../css/pages/institucional.css">
 </head>
-<body>
+<body> 
 
-    <!-- Cabecalho Principal-->
-     <header>
-        <h1>Slim's Film</h1>
-        <p>Especialistas em aplicacao de peliculas automotvas e arquitetonicas</p>
+    <!-- Navbar Transparente -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logótipo da Loja + Nome -->
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/imagens/slims-film-imagem.jpeg" alt="Logo Slim's Film" class="nav-logo-img">
+                <span class="nav-brand-title">Slim's <span class="text-gradient">Film</span></span>
+            </a>
 
-        <!-- menu de navegacao global-->
-         <nav>
-            <ul>
+            <!-- Lista de Links Originais -->
+            <ul class="nav-links">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre1.html">Sobre nós</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="produto.html">Produtos</a></li>
-                <li><a href="termosdeuso.html">Termos de Serviço</a></li>
+                <li><a href="termosdeuso.html" class="active">Termos de Serviço</a></li>
                 <li><a href="politicapriva.html">Políticas de privacidade</a></li>
                 <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
                 <li><a href="carrinho.html">Carrinho</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="login.html">login</a></li>
             </ul>
-         </nav>
-     </header>
+        </div>
+    </nav>
 
-     <main>
-        <section>
-            <h2>Condcoes geras de navegacao e contratacao</h2>
-
-            <article>
-                <h3>1. Aceite dos termos</h3>
-                <p>Navegar pelo ste da <strong>Slim's Film</strong> ou solicitar cotações através de nossos canais integrados, o usuário declara concordar com as regras, orientações técnicas e condições aqui descritas.</p>
-            </article>
-
-            <article>
-                <h3>2. Propriedade Intelectual e Uso de Imagem</h3>
-                <p>Todos os textos, fotos de portfólio, logotipos e materiais gráficos exibidos neste domínio e em nossas redes oficiais pertencem à Slim's Film. É proibida a reprodução parcial ou total sem autorização expressa.</p>
-                <p>A Slim's Film resguarda a identidade dos clientes em suas publicações de portfólio, preservando dados sensíveis e placas de veículos.</p>
-            </article>
-
-            <article>
-                <h3>3. Conformidade com a Legislação de Trânsito</h3>
-                <p>Para projetos automotivos, a Slim's Film orienta ativamente quanto às exigências das resoluções do CONTRAN relativas à transmitância luminosa mínima dos vidros. A definição e a responsabilidade da porcentagem escolhida cabem ao contratante.</p>
-            </article>
-
-            <article>
-                <h3>4. Limitações de Responsabilidade</h3>
-                <p>A Slim's Film não se responsabiliza por danos decorrentes de vidros já trincados, borrachas ressecadas ou avarias pré-existentes identificadas e comunicadas antes do início da instalação.</p>
-            </article>
-        </section>
-     </main>
-
-     <footer>
-        <p>&copy; 2026 Slim's Film. Todos os direitos reservados.</p>
-        <p>Para esclarecimentos legais: consulte nossa <a href="../contato.html">página de contato</a>.</p>
-     </footer>
+    <!-- Banner Principal -->
+    <header class="page-hero">
+        <span class="hero-tag">Regulamentos e Condições</span>
+        <h1 class="hero-title">Termos de <span class="text-gradient">Serviço</span></h1>
+        <p class="hero-subtitle">Condições gerais para contratação de serviços e utilização da plataforma da Slim's Film.</p>
+    </header>
     
+    <!-- Conteúdo Principal -->
+    <main class="main-wrapper">
+        <article class="content-card">
+            <span class="badge-info">Última atualização: Outubro de 2026</span>
+
+            <section class="legal-section">
+                <h2>1. Aceitação dos Termos</h2>
+                <p>Ao acessar nosso site ou solicitar orçamentos e serviços da <strong>Slim's Film</strong>, você concorda em cumprir e estar vinculado a estes Termos de Serviço, a todas as leis e regulamentos aplicáveis.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>2. Prestação dos Serviços</h2>
+                <p>A Slim's Film presta serviços especializados em aplicação de películas de controle solar, segurança, estética automotiva e arquitetônica. O agendamento está sujeito à confirmação de disponibilidade da nossa equipe técnica e do veículo ou imóvel no local combinado.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>3. Orçamentos e Pagamentos</h2>
+                <p>Os orçamentos fornecidos são válidos pelo prazo informado no momento do atendimento. Alterações nas medidas do vidro, no modelo do veículo ou na escolha do material técnico podem acarretar revisão no valor final acordado.</p>
+                <ul>
+                    <li>Valores acordados previamente devem ser quitados nas condições acordadas no fechamento do pedido;</li>
+                    <li>Serviços adicionais identificados durante a execução necessitam de autorização prévia do cliente.</li>
+                </ul>
+            </section>
+
+            <section class="legal-section">
+                <h2>4. Cuidados e Recomendações Pós-Aplicação</h2>
+                <p>Para assegurar a cura e aderência adequada da película aplicada:</p>
+                <ul>
+                    <li>Não acione o fechamento ou abertura de vidros automotivos pelo período de 48 a 72 horas após a instalação;</li>
+                    <li>Não realize a limpeza interna dos vidros com produtos abrasivos ou à base de amônia;</li>
+                    <li>Pequenas névoas de umidade podem ocorrer no período de secagem e desaparecem naturalmente.</li>
+                </ul>
+            </section>
+
+            <section class="legal-section">
+                <h2>5. Legislação de Trânsito</h2>
+                <p>A aplicação de películas em vidros de veículos automotores segue as resoluções vigentes do CONTRAN. A escolha por índices de transparência em desacordo com as normas legais de trânsito é de ciência e responsabilidade do proprietário do veículo.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>6. Contato para Dúvidas</h2>
+                <p>Para dúvidas sobre nossos termos ou solicitações de suporte, entre em contato através da nossa página de <a href="contato.html" style="color: var(--primary-glow); text-decoration: none;">Contato</a> ou por nossos canais oficiais de atendimento.</p>
+            </section>
+        </article>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer-clean">
+        <div class="footer-inner">
+            <p>&copy; 2026 Slim's Film. Todos os direitos reservados.</p>
+            <p class="footer-social">Siga-nos no Instagram: <a href="https://www.instagram.com/slims.film/" target="_blank" rel="noopener noreferrer">@slims.film</a></p>
+        </div>
+    </footer>
+
 </body>
 </html>

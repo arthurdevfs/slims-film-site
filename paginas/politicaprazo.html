@@ -3,81 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Políticas de Prazos e Cura - Slim's Film</title>
+    <title>Políticas de Prazos e Envios | Slim's Film</title>
+
+    <!-- 1. Estilos Base Globais -->
+    <link rel="stylesheet" href="../css/base.css">
+
+    <!-- 2. Componentes Compartilhados -->
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/hero.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+
+    <!-- 3. Estilos Específicos para Documentos Institucionais/Legais -->
+    <link rel="stylesheet" href="../css/pages/institucional.css">
 </head>
-<body>
+<body> 
 
-    <header>
-        <h1>Slim's Film</h1>
-        <p>Diretrizes de Agendamento, Execução e Tempo de Cura</p>
+    <!-- Navbar Transparente -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logótipo da Loja + Nome -->
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/imagens/slims-film-imagem.jpeg" alt="Logo Slim's Film" class="nav-logo-img">
+                <span class="nav-brand-title">Slim's <span class="text-gradient">Film</span></span>
+            </a>
 
-        <!-- menu de navegacao global-->
-         <nav>
-            <ul>
+            <!-- Lista de Links Originais -->
+            <ul class="nav-links">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre1.html">Sobre nós</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="produto.html">Produtos</a></li>
                 <li><a href="termosdeuso.html">Termos de Serviço</a></li>
                 <li><a href="politicapriva.html">Políticas de privacidade</a></li>
-                <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
+                <li><a href="politicaprazo.html" class="active">Políticas de Prazos e Envios</a></li>
                 <li><a href="carrinho.html">Carrinho</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="login.html">login</a></li>
             </ul>
-         </nav>
+        </div>
+    </nav>
+
+    <!-- Banner Principal -->
+    <header class="page-hero">
+        <span class="hero-tag">Execução e Logística</span>
+        <h1 class="hero-title">Prazos e <span class="text-gradient">Envios</span></h1>
+        <p class="hero-subtitle">Critérios de agendamento, tempo de execução técnica e condições para entrega de materiais.</p>
     </header>
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-wrapper">
+        <article class="content-card">
+            <span class="badge-info">Diretrizes de Atendimento e Entrega • 2026</span>
 
-    <main>
-        <section>
-            <h2>Prazos de Execução e Agendamento</h2>
-
-            <article>
-                <h3>1. Agendamento Prévio</h3>
-                <p>Os atendimentos automotivos e visitas técnicas residenciais são realizados com agendamento prévio, garantindo dedicação integral ao veículo ou ambiente marcado.</p>
-            </article>
-
-            <article>
-                <h3>2. Tempo Médio de Aplicação</h3>
-                <p>Os tempos de execução variam conforme a complexidade e tamanho do serviço:</p>
+            <section class="legal-section">
+                <h2>1. Agendamento de Aplicações</h2>
+                <p>O agendamento para aplicação técnica de películas e películas de proteção solar é combinado previamente de acordo com a disponibilidade da nossa equipa e a agenda da oficina.</p>
                 <ul>
-                    <li><strong>Veículos Hatch / Sedã:</strong> de 2 a 3 horas e meia;</li>
-                    <li><strong>Veículos SUV / Picapes:</strong> de 3 a 5 horas;</li>
-                    <li><strong>Remoção de película antiga com cola:</strong> acréscimo de 1 a 2 horas ao processo;</li>
-                    <li><strong>Projetos Arquitetônicos:</strong> prazo estipulado após visita de medição técnica.</li>
+                    <li>Recomenda-se a marcação com antecedência mínima de 24 a 48 horas;</li>
+                    <li>Em dias chuvosos ou com humidade extrema, o horário poderá ser ajustado para garantir a qualidade térmica da secagem.</li>
                 </ul>
-            </article>
-        </section>
+            </section>
 
-        <section>
-            <h2>Política de Cura e Cuidados Pós-Aplicação</h2>
+            <section class="legal-section">
+                <h2>2. Tempo de Execução dos Serviços</h2>
+                <p>O tempo de permanência do veículo ou duração do projeto varia consoante a complexidade técnica:</p>
+                <ul>
+                    <li><strong>Linha Automóvel (Laterais e Traseiro):</strong> de 2 a 4 horas em média;</li>
+                    <li><strong>Aplicação Completa (incluindo Para-brisas e Teto Panorâmico):</strong> de 4 a 6 horas;</li>
+                    <li><strong>Películas Arquitetónicas e Comerciais:</strong> prazo calculado com base na metragem quadrada e altura dos vidros.</li>
+                </ul>
+            </section>
 
-            <article>
-                <h3>1. Período de Cura da Película</h3>
-                <p>Após a aplicação com solução umectante, a película exige um tempo natural de secagem e adesão total. O período padrão de cura é de <strong>48 a 72 horas</strong>, podendo variar em dias úmidos ou frios.</p>
-            </article>
+            <section class="legal-section">
+                <h2>3. Período de Cura e Garantia</h2>
+                <p>Após a entrega do serviço concluído, o cliente deve respeitar rigorosamente o período de cura da película:</p>
+                <ul>
+                    <li>Não abrir os vidros durante um período de 48 a 72 horas;</li>
+                    <li>A evaporação completa da humidade residual pode levar de 7 a 15 dias, dependendo da incidência solar;</li>
+                    <li>Eventuais revisões de acabamento são cobertas pela garantia no prazo estipulado no termo de entrega.</li>
+                </ul>
+            </section>
 
-            <article>
-                <h3>2. Cuidados Obrigatórios Durante a Cura</h3>
-                <p>Para assegurar a garantia integral do serviço, o cliente deve seguir as seguintes orientações:</p>
-                <ol>
-                    <li>Não abaixar os vidros do veículo durante as primeiras 72 horas;</li>
-                    <li>Não acionar o desembaçador térmico traseiro durante as primeiras 72 horas;</li>
-                    <li>Não limpar a face interna do vidro por até 7 dias após a instalação;</li>
-                    <li>Não utilizar esponjas abrasivas, solventes ou limpa-vidros à base de amônia em momento algum.</li>
-                </ol>
-            </article>
+            <section class="legal-section">
+                <h2>4. Envio de Materiais e Produtos Físicos</h2>
+                <p>Para encomendas de bobinas, ferramentas ou acessórios enviados por transportadora ou correio:</p>
+                <ul>
+                    <li>O prazo de envio inicia-se após a confirmação do pagamento;</li>
+                    <li>O código de rastreamento é disponibilizado em até 1 dia útil após a postagem;</li>
+                    <li>A responsabilidade pelo cumprimento do prazo no trajeto é da transportadora selecionada no ato da compra.</li>
+                </ul>
+            </section>
 
-            <article>
-                <h3>3. Aspecto Visual Provisório</h3>
-                <p>Pequenas microbolhas de água ou aspecto embaçado são normais nas primeiras 48 horas devido à evaporação residual da água de aplicação. Caso persistam após o prazo total de cura, o cliente deve acionar nosso suporte para vistoria de garantia.</p>
-            </article>
-        </section>
+            <section class="legal-section">
+                <h2>5. Dúvidas sobre o seu Pedido</h2>
+                <p>Para consultar o estado do seu agendamento ou o envio de materiais, entre em contacto através da nossa página de <a href="contato.html" style="color: var(--primary-glow); text-decoration: none;">Contato</a> ou envie uma mensagem diretamente para a nossa equipa de apoio.</p>
+            </section>
+        </article>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Slim's Film. Todos os direitos reservados.</p>
-        <p>Consulte também nossos <a href="termos-de-uso.html">Termos de Uso</a> e nossa <a href="politicas-privacidade.html">Política de Privacidade</a>.</p>
+    <!-- Rodapé -->
+    <footer class="footer-clean">
+        <div class="footer-inner">
+            <p>&copy; 2026 Slim's Film. Todos os direitos reservados.</p>
+            <p class="footer-social">Siga-nos no Instagram: <a href="https://www.instagram.com/slims.film/" target="_blank" rel="noopener noreferrer">@slims.film</a></p>
+        </div>
     </footer>
 
 </body>
