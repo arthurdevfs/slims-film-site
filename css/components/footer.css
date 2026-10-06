@@ -1,0 +1,32 @@
+.footer-clean {
+  background: oklch(0.1 0.004 30);
+  border-top: 1px solid var(--border);
+  padding: 42px 24px 30px;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 84rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.footer-copy {
+  color: var(--muted-foreground);
+  font-size: 0.88rem;
+}
+
+.footer-social a {
+  color: var(--primary-glow);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-social a:hover {
+  color: var(--primary);
+}
