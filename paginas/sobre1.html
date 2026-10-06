@@ -3,76 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Nós | Slim's Film</title>
+    <!-- Link para o CSS unificado -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body> 
 
-    <!-- Cabecalho Principal-->
-     <header>
-        <h1>Slim's Film</h1>
-        <p>Especialistas em aplicacao de peliculas automotvas e arquitetonicas</p>
-
-        <!-- menu de navegacao global-->
-         <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="sobre1.html">Sobre nós</a></li>
+    <!-- Navbar Superior Fixa -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Slim's Film</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre1.html" class="active">Sobre nós</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="termosdeuso.html">Termos de Serviço</a></li>
-                <li><a href="politicapriva.html">Políticas de privacidade</a></li>
-                <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
-                <li><a href="carrinho.html">Carrinho</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">login</a></li>
+                <li><a href="politicapriva.html">Políticas de Privacidade</a></li>
+                <li><a href="politicaprazo.html">Prazos e Envios</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <li><a href="#cadastro" class="btn-nav">Cadastro</a></li>
+                <li><a href="#login" class="btn-nav btn-nav-primary">Login</a></li>
             </ul>
-         </nav>
-     </header>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Principal (Hero) -->
+    <header class="page-header">
+        <h1>Sobre a <span>Slim's Film</span></h1>
+        <p>Especialistas em aplicação de películas automotivas e arquitetônicas</p>
+    </header>
     
-     <!-- conteudo prncipal-->
-      <main>
-        <article>
-            <h2>Nossa Historia</h2>
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <article class="card-box">
+            <h2>Nossa História</h2>
             <p>A <strong>Slim's Film</strong> atua no mercado oferecendo soluções de alta performance em aplicação de películas de controle solar, segurança e estética. Nosso trabalho nasceu da paixão por acabamento de qualidade e do compromisso em entregar conforto térmico e proteção para motoristas e ambientes residenciais e comerciais.</p>
             <p>Com atendimento personalizado e foco em acabamento refinado sem bolhas ou descolamentos, nos consolidamos como referência no cuidado automotivo e projetos de arquitetura em vidro.</p>
         </article>
 
-        <section>
-            <h2>Nosso Pilares</h2>
-            <article>
-                <h3>Missao</h3>
-                <p>Oferecer bem-estar, privacidade e proteção por meio da aplicação técnica de películas de alta performance, superando as expectativas dos clientes a cada projeto entregue.</p>
-            </article>
+        <section class="pillars-section">
+            <h2>Nossos Pilares</h2>
+            <div class="pillars-grid">
+                <article class="pillar-item">
+                    <h3>Missão</h3>
+                    <p>Oferecer bem-estar, privacidade e proteção por meio da aplicação técnica de películas de alta performance, superando as expectativas dos clientes a cada projeto entregue.</p>
+                </article>
 
-            <article>
-                <h3>Visao</h3>
-                <p>Ser reconhecida como a principal referência regional em películas de proteção solar e estética de vidros, destacando-se pela pontualidade, procedência dos materiais e excelência técnica.</p>
-            </article>
+                <article class="pillar-item">
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida como a principal referência regional em películas de proteção solar e estética de vidros, destacando-se pela pontualidade, procedência dos materiais e excelência técnica.</p>
+                </article>
 
-            <article>
-                <h3>Valores</h3>
-                <ul>
-                    <li>Precisão e rigor técnico no acabamento;</li>
-                    <li>Transparência na indicação do produto adequado para cada cliente;</li>
-                    <li>Uso de materiais com garantia e proteção UV comprovada;</li>
-                    <li>Respeito aos prazos e satisfação total do cliente.</li>
-                </ul>
-            </article>
+                <article class="pillar-item">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Precisão e rigor técnico no acabamento;</li>
+                        <li>Transparência na indicação do produto adequado para cada cliente;</li>
+                        <li>Uso de materiais com garantia e proteção UV comprovada;</li>
+                        <li>Respeito aos prazos e satisfação total do cliente.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
-        <section>
-            <h2>Por que escolher a Slim's Film?</h2>
-            <article>
-                <h3>Atendimento especializado</h3>
-                <p>Analisamos a necessidade de cada cliente antes de indicar o material ideal, seja para redução de calor, estética esportiva ou atendimento às normas da legislação de trânsito vigente.</p>
-            </article>
+        <section class="features-section">
+            <div class="card-box">
+                <h2>Por que escolher a Slim's Film?</h2>
+                <article class="pillar-item">
+                    <h3>Atendimento especializado</h3>
+                    <p>Analisamos a necessidade de cada cliente antes de indicar o material ideal, seja para redução de calor, estética esportiva ou atendimento às normas da legislação de trânsito vigente.</p>
+                </article>
+            </div>
         </section>
-      </main>
+    </main>
 
-      <!-- rodape-->
-       <footer>
-        <p>&copy; 2026 Slim's Film. Todos os direitos reservados.</p>
-        <p>Siga-nos no Instagram: <a href="https://www.instagram.com/slims.film/" target="_blank" rel="noopener noreferrer">@slims.film</a></p>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copy">&copy; 2026 Slim's Film. Todos os direitos reservados.</p>
+            <p class="footer-social">Siga-nos no Instagram: <a href="https://www.instagram.com/slims.film/" target="_blank" rel="noopener noreferrer">@slims.film</a></p>
+        </div>
     </footer>
 
 </body>
