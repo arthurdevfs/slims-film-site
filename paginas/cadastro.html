@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro | Slim's Film Wrap</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
 
-    <header>
-        <h1>Slim's Film</h1>
-        <!-- menu de navegacao global-->
-         <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="sobre1.html">Sobre nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="produto.html">Produtos</a></li>
-                <li><a href="termosdeuso.html">Termos de Serviço</a></li>
-                <li><a href="politicapriva.html">Políticas de privacidade</a></li>
-                <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
-                <li><a href="carrinho.html">Carrinho</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">login</a></li>
-            </ul>
-         </nav>
+    <header class="site-header">
+        <div class="nav-container">
+
+            <a href="../index.html" class="nav-brand">
+                <img
+                    src="assets/logo.png"
+                    alt="Logo Slim's Film Wrap"
+                    class="nav-logo-img"
+                >
+                
+            </a>
+
+            <nav class="navbar" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobre1.html">Sobre nós</a></li>
+                    <li><a href="contato.html" >Contato</a></li>
+                    <li><a href="produto.html">Produtos</a></li>
+                    <li><a href="termosdeuso.html">Termos de Serviço</a></li>
+                    <li><a href="politicapriva.html">Privacidade</a></li>
+                    <li><a href="politicaprazo.html">Prazos e Envios</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                    <li><a href="cadastro.html"class="active" aria-current="page">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
     <main>
         <section id="cadastro">
-            <h2>Criar Conta</h2>
+            <h2>Criar <span class="login-highlight">Conta</span></h2>
                 <article>
                 <h3>Criar minha conta</h3>
                 <p>Cadastre-se para solicitar orçamentos, acompanhar seus serviços e receber promoções exclusivas da Slim's Film Wrap.</p>
