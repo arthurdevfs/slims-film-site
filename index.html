@@ -2,19 +2,32 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Slim's Film</title> <!--Título quee aparece no topo do navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | Slim's Film</title> <!--Título que aparece no topo do navegador-->
+    <meta name="description" content="Slim's Film: especialistas em aplicação de películas automotivas e arquitetônicas, PPF e insulfilm.">
+
+    <!-- 1. Estilos Base Globais -->
+    <link rel="stylesheet" href="css/base.css">
+
+    <!-- 2. Componentes Compartilhados -->
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+
+    <!-- 3. Estilos Específicos da Página Inicial -->
+    <link rel="stylesheet" href="css/pages/home.css">
 </head>
 <body>
 
-    <!-- Cabecalho Principal-->
-    <header>
-        <h1>Slim's Film</h1>
-        <p>Especialistas em aplicacao de peliculas automotvas e arquitetonicas</p>
-        <img src="assets/imagens/slims-film-imagem.jpeg" width="850" alt="Fachada da Slim's Film"> <!--imagem da página inicial-->
-        <!-- menu de navegacao global-->
-         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
+    <!-- Menu de navegação global -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/imagens/slims-film-imagem.jpeg" alt="Logo Slim's Film" class="nav-logo-img">
+                <span class="nav-brand-title">Slim's <span class="text-gradient">Film</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Início</a></li>
                 <li><a href="paginas/sobre1.html">Sobre nós</a></li>
                 <li><a href="paginas/contato.html">Contato</a></li>
                 <li><a href="paginas/produto.html">Produtos</a></li>
@@ -25,21 +38,68 @@
                 <li><a href="paginas/cadastro.html">Cadastro</a></li>
                 <li><a href="paginas/login.html">login</a></li>
             </ul>
-         </nav>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Principal -->
+    <header class="page-hero home-hero">
+        <div class="home-hero-inner">
+            <div class="home-hero-text">
+                <span class="hero-tag">Envelopamento · PPF · Insulfilm</span>
+                <h1 class="hero-title">Slim's <span class="text-gradient">Film</span></h1>
+                <p class="hero-subtitle">Especialistas em aplicação de películas automotivas e arquitetônicas</p>
+                <div class="hero-actions">
+                    <a href="paginas/produto.html" class="btn btn-primary">Ver produtos</a>
+                    <a href="paginas/contato.html" class="btn btn-outline">Solicitar orçamento</a>
+                </div>
+            </div>
+
+            <!--imagem da página inicial-->
+            <figure class="home-hero-logo">
+                <img src="assets/imagens/slims-film-imagem.jpeg" alt="Logo da Slim's Film Envelopamento">
+            </figure>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Os melhores Insufilmes e PPF's do mercado na palma da sua mão</h2>
-            <img src="assets/imagens/slims-film-imagem2.jpeg" width="400" alt="Trabalho de película aplicado em veículo">
-            <img src="assets/imagens/slims-film-imagem4.jpeg" width="400" alt="Detalhe de acabamento da película">
-            <img src="assets/imagens/slims-film-imagem3.jpeg" width="400" alt="Veículo finalizado com película">
-            <img src="assets/imagens/slims-film-imagem5.jpeg" width="400" alt="Serviço de envelopamento em andamento">
+    <main class="main-wrapper">
+        <section class="home-section" aria-labelledby="galeria-titulo">
+            <div class="section-heading">
+                <span class="hero-tag">Nosso trabalho</span>
+                <h2 id="galeria-titulo">Os melhores Insulfilmes e PPF's do mercado <span class="text-gradient">na palma da sua mão</span></h2>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="assets/imagens/slims-film-imagem2.jpeg" alt="Trabalho de película aplicado em veículo" loading="lazy">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/imagens/slims-film-imagem4.jpeg" alt="Detalhe de acabamento da película" loading="lazy">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/imagens/slims-film-imagem3.jpeg" alt="Veículo finalizado com película" loading="lazy">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/imagens/slims-film-imagem5.jpeg" alt="Serviço de envelopamento em andamento" loading="lazy">
+                </figure>
+            </div>
         </section>
-        <section>
-            <video controls autoplay muted loop src="assets/videos/insulfilm e ppf.mp4">
-                O seu navegador não suporta o elemento de vídeo.
-            </video>
+
+        <section class="home-section" aria-labelledby="video-titulo">
+            <div class="media-card">
+                <div class="media-text">
+                    <span class="hero-tag">Em movimento</span>
+                    <h2 id="video-titulo">Veja o acabamento <span class="text-gradient">de perto</span></h2>
+                    <p>Acabamento refinado, sem bolhas ou descolamentos, com proteção e estética em cada projeto de PPF e insulfilm.</p>
+                    <a href="paginas/contato.html" class="btn btn-primary">Fale com a gente</a>
+                </div>
+
+                <div class="video-frame">
+                    <video controls autoplay muted loop playsinline src="assets/videos/insulfilm e ppf.mp4">
+                        O seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+            </div>
+
             <audio autoplay loop>
                 <source src="assets/audios/house music.wav">
                 <source src="assets/audios/house music.ogg">
@@ -48,10 +108,13 @@
             </audio>
         </section>
     </main>
-    
+
     <!--Rodapé do site-->
-    <footer>
-         <p>&copy; 2026. Desenvolvido por Arthur, Davi, Igor, João e Julia. Todos os direitos reservados </p>
+    <footer class="footer-clean">
+        <div class="footer-inner">
+            <p class="footer-copy">&copy; 2026. Desenvolvido por Arthur, Davi, Igor, João e Julia. Todos os direitos reservados.</p>
+            <p class="footer-copy footer-social">Siga-nos no Instagram: <a href="https://www.instagram.com/slims.film/" target="_blank" rel="noopener noreferrer">@slims.film</a></p>
+        </div>
     </footer>
 </body>
 </html>
