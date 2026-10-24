@@ -8,7 +8,6 @@
 
 - **Arthur Alves De Souza Rocha** — RGM: 47606762
 - **Davi de Almeida Pereira** — RGM: 47488891
-- **Igor Batista Cardoso dos Santos** — RGM: 46630902
 - **Joao Vitor Nunes de Aquino** — RGM: 48321770
 - **Júlia Lindsay da Silva** — RGM: 47396407
 
