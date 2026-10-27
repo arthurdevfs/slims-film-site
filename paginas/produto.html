@@ -1,86 +1,204 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <title>Slim's Film - Produtos</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Slim's Film Wrap</title>
+    <link rel="stylesheet" href="produto.css">
 </head>
 
 <body>
 
-    <!-- Cabecalho Principal-->
-    <header>
-        <h1>Slim's Film</h1>
-        <p>Especialistas em aplicacao de peliculas automotvas e arquitetonicas</p>
-        <img src="/assets/imagens/slims-film-imagem.jpeg" width="850" alt="Fachada da Slim's Film"> <!--imagem da página inicial-->
-        <!-- menu de navegacao global-->
-         <nav>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+
+        <div class="marca">
+            <h2>Slim's Film Wrap</h2>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
             <ul>
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre1.html">Sobre nós</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="produto.html" class="ativo">Produtos</a></li>
                 <li><a href="termosdeuso.html">Termos de Serviço</a></li>
-                <li><a href="politicapriva.html">Políticas de privacidade</a></li>
-                <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
+                <li><a href="politicapriva.html">Privacidade</a></li>
+                <li><a href="politicaprazo.html">Prazos e Envios</a></li>
                 <li><a href="carrinho.html">Carrinho</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">login</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
-         </nav>
+        </nav>
+
     </header>
+
     <main>
 
-    <section>
-    <h2>Nossos Produtos</h2>
+        <!-- Apresentação -->
+        <section class="apresentacao">
+            <span class="subtitulo">QUALIDADE E PROTEÇÃO</span>
 
-    <article>
-        <h3>PPF Premium</h3>
-                <img src="/assets/imagens/slims-film-imagem-PPF2.jpeg" alt="Carro com película PPF">
-                <p>
-                    PPF (Paint Protection Film): película de proteção aplicada
-                    à carroceria para preservar a pintura contra riscos,
-                    pedras, sujeira e pequenos impactos, mantendo o veículo
-                    protegido e com aparência impecável.
-                </p>
+            <h1>Nossos <span>Produtos</span></h1>
 
-                <p>Preço: R$ 2.500,00</p>
+            <p>
+                Conheça nossas soluções de proteção,
+                conforto e personalização automotiva.
+            </p>
+        </section>
 
-                <label for="quantidade-PPF">Quantidade:</label>
+        <!-- Lista de produtos -->
+        <section class="container-produtos">
 
-                <input type="number" id="quantidade-PPF" value="1" min="1">
+            <!-- Produto 1 -->
+            <article class="card-produto">
 
-                <br><br>
+                <div class="imagem-produto">
+                    <span>PPF PREMIUM</span>
+                </div>
 
-                <button data-produto="ppf">Adicionar ao Carrinho</button>
+                <div class="conteudo-produto">
+
+                    <span class="categoria">PROTEÇÃO AUTOMOTIVA</span>
+
+                    <h2>PPF Premium</h2>
+
+                    <p>
+                        Película de proteção para a pintura
+                        do veículo, ajudando a proteger contra
+                        riscos leves e desgastes do dia a dia.
+                    </p>
+
+                    <div class="informacoes">
+                        <span>Proteção da pintura</span>
+                        <span>Alta transparência</span>
+                        <span>Acabamento premium</span>
+                    </div>
+
+                    <div class="preco">
+                        <small>Valor ilustrativo</small>
+                        <strong>R$ 2.500,00</strong>
+                    </div>
+
+                    <button class="btn-carrinho">
+                        Adicionar ao Carrinho
+                    </button>
+
+                </div>
             </article>
 
-            <article>
-                <h3>Insulfilm</h3>
-                <img src="/assets/imagens/slims-film-imagem-insulfilme.jpeg" alt="Carro com película Insulfilm">
-                <p>
-                    Insulfilm automotivo: película aplicada aos vidros
-                    do veículo para proporcionar maior privacidade,
-                    conforto e proteção contra a incidência solar.
-                </p>
-                <p>Preço: R$ 800,00</p>
+            <!-- Produto 2 -->
+            <article class="card-produto">
 
-                <label for="quantidade-insulfilm">Quantidade:</label>
+                <div class="imagem-produto">
+                    <span>INSULFILM PREMIUM</span>
+                </div>
 
-                <input type="number" id="quantidade-insulfilm" value="1" min="1">
+                <div class="conteudo-produto">
 
-                <br><br>
+                    <span class="categoria">CONFORTO AUTOMOTIVO</span>
 
-                <button data-produto="insulfilm">Adicionar ao Carrinho</button>
+                    <h2>Insulfilm Premium</h2>
 
+                    <p>
+                        Película automotiva desenvolvida
+                        para proporcionar conforto térmico,
+                        privacidade e proteção solar.
+                    </p>
 
+                    <div class="informacoes">
+                        <span>Proteção solar</span>
+                        <span>Mais privacidade</span>
+                        <span>Conforto térmico</span>
+                    </div>
+
+                    <div class="preco">
+                        <small>Valor ilustrativo</small>
+                        <strong>R$ 800,00</strong>
+                    </div>
+
+                    <button class="btn-carrinho">
+                        Adicionar ao Carrinho
+                    </button>
+
+                </div>
             </article>
+
+            <!-- Produto 3 -->
+            <article class="card-produto">
+
+                <div class="imagem-produto">
+                    <span>ENVELOPAMENTO</span>
+                </div>
+
+                <div class="conteudo-produto">
+
+                    <span class="categoria">PERSONALIZAÇÃO</span>
+
+                    <h2>Envelopamento Premium</h2>
+
+                    <p>
+                        Personalize a aparência do seu veículo
+                        com diferentes cores e acabamentos,
+                        proporcionando um visual exclusivo.
+                    </p>
+
+                    <div class="informacoes">
+                        <span>Visual personalizado</span>
+                        <span>Diversas cores</span>
+                        <span>Acabamento profissional</span>
+                    </div>
+
+                    <div class="preco">
+                        <small>Preço sob consulta</small>
+                        <strong>Solicite orçamento</strong>
+                    </div>
+
+                    <a href="contato.html" class="btn-orcamento">
+                        Solicitar Orçamento
+                    </a>
+
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Chamada para contato -->
+        <section class="contato-final">
+
+            <span class="subtitulo">PRECISA DE AJUDA?</span>
+
+            <h2>Encontre a solução ideal para seu veículo</h2>
+
+            <p>
+                Entre em contato com nossa equipe
+                e solicite um orçamento personalizado.
+            </p>
+
+            <a href="contato.html">Fale Conosco</a>
 
         </section>
 
     </main>
 
-</body>
+    <!-- Rodapé -->
+    <footer>
 
+        <p>
+            © 2026 Slim's Film Wrap.
+            Todos os direitos reservados.
+        </p>
+
+        <div class="links-rodape">
+            <a href="termosdeuso.html">Termos de Serviço</a>
+            <a href="politicapriva.html">Privacidade</a>
+            <a href="politicaprazo.html">Prazos e Envios</a>
+        </div>
+
+    </footer>
+
+</body>
 </html>

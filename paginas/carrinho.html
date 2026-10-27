@@ -1,52 +1,141 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slim's Film - Carrinho</title>
+    <title>Carrinho | Slim's Film Wrap</title>
+    <link rel="stylesheet" href="carrinho.css">
 </head>
 
 <body>
-    <header>
-                <!-- menu de navegacao global-->
-         <nav>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="marca">
+            <h2>Slim's Film Wrap</h2>
+        </div>
+
+        <nav>
             <ul>
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre1.html">Sobre nós</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="produto.html">Produtos</a></li>
                 <li><a href="termosdeuso.html">Termos de Serviço</a></li>
-                <li><a href="politicapriva.html">Políticas de privacidade</a></li>
-                <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
-                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="politicapriva.html">Privacidade</a></li>
+                <li><a href="politicaprazo.html">Prazos e Envios</a></li>
+                <li><a href="carrinho.html" class="ativo">Carrinho</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">login</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
-         </nav>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h1> Meu Carrinho</h1>
-            <h2>Produtos no Carrinho</h2>
-            <article>
-                <h3>PPF Premium</h3>
-                <p>Quantidade: 1</p>
-                <p>Preço unitário: R$ 2.500,00</p>
-                <p>Subtotal: R$ 2.500,00</p>
-                <button>Remover </button>
-            </article>
-            <article>
-                <h3>Insulfilm Premium</h3>
-                <p>Quantidade: 1</p>
-                <p>Preço unitário: R$ 800,00</p>
-                <p>Subtotal: R$ 800,00</p>
-                <button>Remover</button>
-            </article>
-            <h2>Total: R$ 3.300,00</h2>
-            <button>Finalizar Compra</button>
-        </section>
-    </main>
-</body>
 
+    <main>
+
+        <!-- Título da página -->
+        <section class="titulo-pagina">
+            <span class="subtitulo">SEUS PRODUTOS</span>
+            <h1>Meu <span>Carrinho</span></h1>
+            <p>Confira seus produtos antes de finalizar a compra.</p>
+        </section>
+
+        <!-- Conteúdo do carrinho -->
+        <div class="container-carrinho">
+
+            <section class="lista-produtos">
+                <h2>Produtos no Carrinho</h2>
+
+                <!-- Produto 1 -->
+                <article class="produto">
+                    <div class="produto-info">
+                        <span class="categoria">PROTEÇÃO AUTOMOTIVA</span>
+                        <h3>PPF Premium</h3>
+                        <p>Película de proteção premium para seu veículo.</p>
+                        <strong>R$ 2.500,00</strong>
+                    </div>
+
+                    <div class="produto-acoes">
+                        <label for="qtd-ppf">Quantidade</label>
+                        <input type="number" id="qtd-ppf"
+                               min="1" value="1">
+
+                        <p>Subtotal</p>
+                        <strong>R$ 2.500,00</strong>
+
+                        <button class="remover">Remover</button>
+                    </div>
+                </article>
+
+                <!-- Produto 2 -->
+                <article class="produto">
+                    <div class="produto-info">
+                        <span class="categoria">PELÍCULA AUTOMOTIVA</span>
+                        <h3>Insulfilm Premium</h3>
+                        <p>Película premium com proteção solar.</p>
+                        <strong>R$ 800,00</strong>
+                    </div>
+
+                    <div class="produto-acoes">
+                        <label for="qtd-insulfilm">Quantidade</label>
+                        <input type="number" id="qtd-insulfilm"
+                               min="1" value="1">
+
+                        <p>Subtotal</p>
+                        <strong>R$ 800,00</strong>
+
+                        <button class="remover">Remover</button>
+                    </div>
+                </article>
+
+                <a href="produto.html" class="continuar">
+                    Continuar comprando
+                </a>
+
+            </section>
+
+            <!-- Resumo -->
+            <aside class="resumo">
+                <span class="subtitulo">SEU PEDIDO</span>
+                <h2>Resumo da Compra</h2>
+
+                <div class="linha">
+                    <span>Produtos (2)</span>
+                    <span>R$ 3.300,00</span>
+                </div>
+
+                <div class="linha">
+                    <span>Desconto</span>
+                    <span>R$ 0,00</span>
+                </div>
+
+                <hr>
+
+                <div class="total">
+                    <span>Total</span>
+                    <strong>R$ 3.300,00</strong>
+                </div>
+
+                <button class="finalizar">
+                    Finalizar Compra
+                </button>
+
+                <p class="aviso">
+                    Confira os produtos e quantidades
+                    antes de continuar.
+                </p>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 Slim's Film Wrap. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
 </html>
