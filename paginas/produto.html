@@ -7,14 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos | Slim's Film Wrap</title>
 
-        <!-- 1. Estilos Base Globais -->
-    <link rel="stylesheet" href="../css/base.css">
-
-        <!-- 2. Estilos de Componentes -->
+    <!-- Estilos da página primeiro; estilos globais e navbar por último -->
     <link rel="stylesheet" href="../css/pages/produto.css">
-    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/components/hero.css">
     <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <style>
+        /* Isola a navbar das regras genéricas de menu em produto.css */
+        .navbar .nav-links { gap: 8px 14px; justify-content: center; }
+        .navbar .nav-links a { padding: 6px 12px; font-size: .88rem; border-radius: var(--radius-pill); color: var(--muted-foreground); }
+        .navbar .nav-links a.active { color: var(--foreground); background: oklch(1 0 0 / 8%); border: 1px solid var(--border); }
+    </style>
 </head>
 <body>
 
@@ -42,18 +46,16 @@
             <li><a href="contato.html">Contato</a></li>
             <li><a href="produto.html" class="active" aria-current="page">Produtos</a></li>
             <li><a href="termosdeuso.html">Termos de Serviço</a></li>
-            <li><a href="politicapriva.html">Políticas de Privacidade</a></li>
+            <li><a href="politicapriva.html">Políticas de privacidade</a></li>
             <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
             <li><a href="carrinho.html">Carrinho</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="login.html">login</a></li>
         </ul>
 
     </div>
 </nav>
 
-
-    </header>
 
     <main>
 
