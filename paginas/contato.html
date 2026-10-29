@@ -9,8 +9,22 @@
     <meta name="description" content="Entre em contato com a Slim's Film Wrap para tirar dúvidas e solicitar um orçamento.">
 
     <!-- Estilos gerais e estilos específicos da página -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/pages/contato.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+
+    <style>
+        /* Impede que regras antigas do contato.css alterem a navbar institucional */
+        body > nav.navbar {
+            background: rgba(8, 8, 8, 0.75);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(12px);
+        }
+
+        body > nav.navbar .nav-links a.active {
+            border-radius: 999px;
+        }
+    </style>
 
     <!-- JavaScript -->
     <script src="script.js" defer></script>
@@ -18,36 +32,38 @@
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header class="site-header">
+    <!-- Navbar Transparente -->
+    <nav class="navbar">
         <div class="nav-container">
 
+            <!-- Logotipo da Loja + Nome -->
             <a href="../index.html" class="nav-brand">
                 <img
-                    src="assets/logo.png"
-                    alt="Logo Slim's Film Wrap"
+                    src="../assets/imagens/slims-film-imagem.jpeg"
+                    alt="Logo Slim's Film"
                     class="nav-logo-img"
                 >
-                
+                <span class="nav-brand-title">
+                    Slim's <span class="text-gradient">Film</span>
+                </span>
             </a>
 
-            <nav class="navbar" aria-label="Menu principal">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="sobre1.html">Sobre nós</a></li>
-                    <li><a href="contato.html" class="active" aria-current="page">Contato</a></li>
-                    <li><a href="produto.html">Produtos</a></li>
-                    <li><a href="termosdeuso.html">Termos de Serviço</a></li>
-                    <li><a href="politicapriva.html">Privacidade</a></li>
-                    <li><a href="politicaprazo.html">Prazos e Envios</a></li>
-                    <li><a href="carrinho.html">Carrinho</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
+            <!-- Links de Navegação -->
+            <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre1.html">Sobre nós</a></li>
+                <li><a href="contato.html" class="active" aria-current="page">Contato</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="termosdeuso.html">Termos de Serviço</a></li>
+                <li><a href="politicapriva.html">Políticas de privacidade</a></li>
+                <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
 
         </div>
-    </header>
+    </nav>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-wrapper">
@@ -130,11 +146,19 @@
         <section class="form-section" id="orcamento">
             <div class="section-heading">
                 <span class="hero-tag">Vamos conversar?</span>
-                <h2>Solicite um <span class="text-gradient">Orçamento</span></h2>
+                <h2>
+                    Solicite um
+                    <span class="text-gradient">Orçamento</span>
+                </h2>
                 <p>Preencha os campos abaixo para preparar sua solicitação.</p>
             </div>
 
-            <form class="contact-form" id="contact-form" action="#" method="post">
+            <form
+                class="contact-form"
+                id="contact-form"
+                action="#"
+                method="post"
+            >
 
                 <div class="form-group">
                     <label for="nome">Nome completo *</label>
