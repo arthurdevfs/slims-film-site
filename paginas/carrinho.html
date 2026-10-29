@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="../css/components/footer.css">
     <link rel="stylesheet" href="../css/components/navbar.css">
     <style>
-        /* Isola a navbar das regras genéricas de menu da página */
-        .navbar .nav-links { gap: 8px 14px; justify-content: center; }
-        .navbar .nav-links a { padding: 6px 12px; font-size: .88rem; border-radius: var(--radius-pill); color: var(--muted-foreground); }
+        /* Navbar institucional: evita interferência de carrinho.css */
+        .navbar .nav-links { display:flex; gap:8px 14px; justify-content:center; list-style:none; margin:0; padding:0; }
+        .navbar .nav-links a { display:inline-block; padding:6px 12px; font-family:var(--font-body); font-size:.88rem; font-weight:500; border-radius:var(--radius-pill); color:var(--muted-foreground); text-decoration:none; }
         .navbar .nav-links a.active { color: var(--foreground); background: oklch(1 0 0 / 8%); border: 1px solid var(--border); }
+        .navbar .nav-brand-title { color:var(--foreground); font-family:var(--font-display); }
+        .navbar .nav-brand-title .text-gradient { background:var(--gradient-brand); background-clip:text; -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        .navbar { background:transparent; border-bottom:1px solid var(--border); }
     </style>
 </head>
 <body>
