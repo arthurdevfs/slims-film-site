@@ -5,13 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Slim's Film Wrap</title>
     <link rel="stylesheet" href="../css/pages/login.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/components/navbar.css">
     <link rel="stylesheet" href="../css/components/hero.css">
     <link rel="stylesheet" href="../css/components/footer.css">
+    <style>
+        /* Mantém a navbar institucional sem interferir no formulário. */
+        body > .navbar { background: transparent; }
+        body > .navbar .nav-links { gap: 8px 14px; justify-content: center; }
+        body > .navbar .nav-links a {
+            color: var(--muted-foreground);
+            font-family: var(--font-body);
+            font-size: .88rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: var(--radius-pill);
+        }
+        body > .navbar .nav-links a.active {
+            color: var(--foreground);
+            background: oklch(1 0 0 / 8%);
+            border: 1px solid var(--border);
+        }
+        body > .navbar .nav-brand-title { color: var(--foreground); }
+        body > .navbar .text-gradient {
+            background: var(--gradient-brand);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
 </head>
 <body>
-
-        <!-- Navbar Transparente -->
+    <!-- Navbar Transparente -->
     <nav class="navbar">
         <div class="nav-container">
             <!-- Logótipo da Loja + Nome -->
@@ -20,35 +45,24 @@
                 <span class="nav-brand-title">Slim's <span class="text-gradient">Film</span></span>
             </a>
 
-   <header class="site-header">
-        <div class="nav-container">
-
-            <a href="../index.html" class="nav-brand">
-                <img
-                    src="assets/logo.png"
-                    alt="Logo Slim's Film Wrap"
-                    class="nav-logo-img"
-                >
-                
-            </a>
-
-            <nav class="navbar" aria-label="Menu principal">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="sobre1.html">Sobre nós</a></li>
-                    <li><a href="contato.html" >Contato</a></li>
-                    <li><a href="produto.html">Produtos</a></li>
-                    <li><a href="termosdeuso.html">Termos de Serviço</a></li>
-                    <li><a href="politicapriva.html">Privacidade</a></li>
-                    <li><a href="politicaprazo.html">Prazos e Envios</a></li>
-                    <li><a href="carrinho.html">Carrinho</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="login.html"class="active" aria-current="page">Login</a></li>
-                </ul>
-            </nav>
-
+            <!-- Lista de Links Originais -->
+            <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre1.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="termosdeuso.html">Termos de Serviço</a></li>
+                <li><a href="politicapriva.html">Políticas de privacidade</a></li>
+                <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html" class="active" aria-current="page">login</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
+
+
+
 
     <main>
         
