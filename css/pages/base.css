@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --radius: 0.875rem;
+  --radius-pill: 9999px;
+
+  --background: oklch(0.12 0.004 30);
+  --foreground: oklch(0.97 0.004 60);
+  --card: oklch(0.17 0.005 30);
+  --primary: oklch(0.64 0.21 35);
+  --primary-glow: oklch(0.74 0.17 55);
+  --muted: oklch(0.2 0.005 30);
+  --muted-foreground: oklch(0.68 0.01 50);
+  --border: oklch(1 0 0 / 9%);
+
+  --gradient-brand: linear-gradient(110deg, var(--primary), var(--primary-glow));
+  --font-display: "Archivo", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+  --transition: all 0.25s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-gradient {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.main-wrapper {
+  max-width: 72rem;
+  margin: 20px auto 90px;
+  padding: 0 24px;
+  flex: 1;
+}
