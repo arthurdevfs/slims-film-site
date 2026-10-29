@@ -1,51 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Slim's Film Wrap</title>
+
     <link rel="stylesheet" href="../css/pages/login.css">
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/components/navbar.css">
     <link rel="stylesheet" href="../css/components/hero.css">
     <link rel="stylesheet" href="../css/components/footer.css">
-    <style>
-        /* Mantém a navbar institucional sem interferir no formulário. */
-        body > .navbar { background: transparent; }
-        body > .navbar .nav-links { gap: 8px 14px; justify-content: center; }
-        body > .navbar .nav-links a {
-            color: var(--muted-foreground);
-            font-family: var(--font-body);
-            font-size: .88rem;
-            font-weight: 500;
-            padding: 6px 12px;
-            border-radius: var(--radius-pill);
-        }
-        body > .navbar .nav-links a.active {
-            color: var(--foreground);
-            background: oklch(1 0 0 / 8%);
-            border: 1px solid var(--border);
-        }
-        body > .navbar .nav-brand-title { color: var(--foreground); }
-        body > .navbar .text-gradient {
-            background: var(--gradient-brand);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/components/navbar.css">
 </head>
 <body>
+
     <!-- Navbar Transparente -->
     <nav class="navbar">
         <div class="nav-container">
-            <!-- Logótipo da Loja + Nome -->
+
+            <!-- Logotipo da Loja + Nome -->
             <a href="../index.html" class="nav-brand">
-                <img src="../assets/imagens/slims-film-imagem.jpeg" alt="Logo Slim's Film" class="nav-logo-img">
-                <span class="nav-brand-title">Slim's <span class="text-gradient">Film</span></span>
+                <img
+                    src="../assets/imagens/slims-film-imagem.jpeg"
+                    alt="Logo Slim's Film"
+                    class="nav-logo-img"
+                >
+                <span class="nav-brand-title">
+                    Slim's <span class="text-gradient">Film</span>
+                </span>
             </a>
 
-            <!-- Lista de Links Originais -->
+            <!-- Links de Navegação -->
             <ul class="nav-links">
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre1.html">Sobre nós</a></li>
@@ -56,18 +41,20 @@
                 <li><a href="politicaprazo.html">Políticas de Prazos e Envios</a></li>
                 <li><a href="carrinho.html">Carrinho</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html" class="active" aria-current="page">login</a></li>
+                <li>
+                    <a href="login.html" class="active" aria-current="page">
+                        Login
+                    </a>
+                </li>
             </ul>
+
         </div>
     </nav>
 
-
-
-
     <main>
-        
         <section id="login">
             <h2>Área do <span class="login-highlight">Cliente</span></h2>
+
             <article>
                 <h3>Entrar na minha conta</h3>
                 <p>Acesse sua conta para acompanhar orçamentos, agendamentos e pedidos na Slim's Film Wrap.</p>
@@ -82,7 +69,8 @@
                             id="email"
                             name="email"
                             placeholder="seuemail@exemplo.com"
-                            required><br><br>
+                            required
+                        ><br><br>
 
                         <label for="senha">Senha:</label><br>
                         <input
@@ -90,7 +78,8 @@
                             id="senha"
                             name="senha"
                             minlength="6"
-                            required><br><br>
+                            required
+                        ><br><br>
 
                         <input type="checkbox" id="lembrar" name="lembrar">
                         <label for="lembrar">Lembrar de mim</label><br><br>
@@ -103,7 +92,6 @@
                 <p>Dúvidas? Fale com a gente na <a href="../contato.html">página de contato</a>.</p>
             </article>
         </section>
-
     </main>
 
     <footer>
