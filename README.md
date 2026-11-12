@@ -84,28 +84,48 @@ A separação modular das páginas e a conformidade técnica asseguram uma base 
 
 ---
 
-## 📁 5. Estrutura do Repositório
+## 5. Organização do repositório
 
 ```text
-slims-film-site/
-├── index.html                   # Página inicial da plataforma
-├── README.md                    # Documentação oficial do projeto
-├── imagens/                     # Recursos visuais e registos fotográficos
-│   ├── slims-film-imagem.jpeg
-│   ├── slims-film-imagem2.jpeg
-│   ├── slims-film-imagem3.jpeg
-│   ├── slims-film-imagem4.jpeg
-│   └── slims-film-imagem5.jpeg
-└── paginas/                     # Módulos e páginas internas
-    ├── cadastro.html            # Formulário de registo
-    ├── carrinho.html            # Área de orçamento / carrinho
-    ├── contato.html             # Canal de apoio validado
-    ├── login.html               # Formulário de autenticação
-    ├── politicaprazo.html       # Diretrizes de prazos e garantias
-    ├── politicapriva.html       # Política de proteção de dados
-    ├── produto.html             # Catálogo de películas
-    ├── sobre1.html              # Informações institucionais
-    └── termosdeuso.html         # Termos gerais de utilização
+slims-film-site-main/
+├── README.md
+├── index.html
+├── paginas/
+│   ├── cadastro.html
+│   ├── carrinho.html
+│   ├── contato.html
+│   ├── login.html
+│   ├── politicaprazo.html
+│   ├── politicapriva.html
+│   ├── produto.html
+│   ├── sobre1.html
+│   ├── termosdeuso.html
+│   └── script.js                 # JavaScript carregado pela página de contato
+├── css/
+│   ├── base.css
+│   ├── components/
+│   │   ├── footer.css
+│   │   ├── hero.css
+│   │   └── navbar.css
+│   └── pages/
+│       ├── cadastro.css
+│       ├── carrinho.css
+│       ├── contato.css
+│       ├── home.css
+│       ├── institucional.css
+│       ├── login.css
+│       ├── produto.css
+│       └── sobre.css
+├── documentacao/
+│   └── apresentacao/
+│       └── Slims_Film_Redesenhado.pptx  # Apresentação acadêmica (12 slides)
+└── assets/
+    ├── audios/                  # Arquivos mp3, ogg e wav
+    ├── imagens/                 # Logotipo, fotos dos serviços e evidência da visita
+    │   └── foto-do-grupo-na-slims-film.jpg
+    └── videos/
+        └── insulfilm e ppf.mp4
+```
 
 ## Contato direto com o responsavel
 
