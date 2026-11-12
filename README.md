@@ -1,8 +1,13 @@
 # Slim's Film - Website Institucional e Comercial
 
+
 > 🌐 **Ligação da Aplicação Hospedada:** [acesse o site](https://arthurdevfs.github.io/slims-film-site/))  
 
 ---
+
+# Apresentação
+
+https://youtu.be/zZ_wA7fGFBk
 
 ## 👥 1. Integrantes do Grupo
 
@@ -107,6 +112,3 @@ slims-film-site/
 Telefone: +55 (11) 94719-5992 - Rafael
 
 
-## Apresentação
-
-https://youtu.be/zZ_wA7fGFBk
